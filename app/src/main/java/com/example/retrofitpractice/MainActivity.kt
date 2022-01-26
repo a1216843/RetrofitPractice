@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity(), CompletionListener {
         binding.testRecyclerview.adapter = TestAdapter(data)
         binding.testRecyclerview.layoutManager = LinearLayoutManager(this)
         registerForContextMenu(binding.testRecyclerview)
-        System.out.println(data.size)
     }
     override fun loadComplete(data: Data){
         System.out.println(data.content)

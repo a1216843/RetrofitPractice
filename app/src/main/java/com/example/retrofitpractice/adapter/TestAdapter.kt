@@ -23,7 +23,6 @@ class TestAdapter(val dataSet: ArrayList<String>) : RecyclerView.Adapter<TestAda
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TestAdapter.TestViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_test_recyclerview, parent, false)
-        System.out.println("살려줘! ${dataSet.size}")
         return TestViewHolder(ItemTestRecyclerviewBinding.bind(view))
     }
 
